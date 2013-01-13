@@ -1,0 +1,27 @@
+{
+    "name": "cpliakas/solarium-statsjsp",
+    "type": "library",
+    "description": "A stats.jsp request handler for Solarium.",
+    "keywords": ["solr", "solarium", "stats", "stats.jsp"],
+    "homepage": "https://github.com/cpliakas/solarium-statsjsp",
+    "license": "NewBSD",
+    "authors": [
+        {
+            "name": "See Contributors to Drupal's Apache Solr Search Integration module.",
+            "homepage": "http://drupal.org/project/apachesolr"
+        },
+        {
+            "name": "Chris Pliakas",
+            "email": "opensource@chrispliakas.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "solarium/solarium": "3.0.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Solarium\\QueryType\\Statsjsp": "src"
+        }
+    }
+}
