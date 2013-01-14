@@ -49,6 +49,6 @@ class Query extends BaseQuery
      */
     public function getResponseParser()
     {
-        return new ResponseParser();
+        return new null;
     }
 }

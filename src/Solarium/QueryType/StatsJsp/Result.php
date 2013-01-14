@@ -65,4 +65,13 @@ class Result extends BaseResult
     {
         return $this->getData()->start;
     }
+
+    /**
+     * @return SimpleXMLElement
+     */
+    public function getSolrInfo()
+    {
+        $property = 'solr-info';
+        return $this->getData()->$property;
+    }
 }

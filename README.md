@@ -6,8 +6,6 @@ A Stats.jsp request handler to [Solarium](https://github.com/basdenooijer/solari
 Usage
 =====
 
-    <?php
-
     use Solarium\Client;
     use Solarium\QueryType\StatsJsp\Query as StatsJspQuery;
 
