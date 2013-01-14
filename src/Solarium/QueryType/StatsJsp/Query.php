@@ -9,19 +9,17 @@ namespace Solarium\QueryType\StatsJsp;
 use Solarium\Core\Query\Query as BaseQuery;
 
 /**
- * Luke query
- *
- * Use a Luke query to get statistics about the Solr instance.
+ * Stats.jsp query.
  */
 class Query extends BaseQuery
 {
     /**
-     * Querytype luke
+     * Querytype stats.jsp
      */
     const QUERY_STATSJSP = 'stats.jsp';
 
     /**
-     * Default options for the "Luke" query type.
+     * Default options for the "Stats.jsp" query type.
      *
      * @var array
      */

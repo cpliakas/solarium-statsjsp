@@ -4,29 +4,27 @@
  * Stats.jsp request handler for Solarium.
  */
 
-namespace Solarium\QueryType\RequestBuilder;
+namespace Solarium\QueryType\StatsJsp;
 
-use Solarium\Core\Query\RequestBuilder as BaseRequestBuilder;
+use Solarium\Core\Client\Request;
 use Solarium\Core\Query\QueryInterface;
+use Solarium\Core\Query\RequestBuilder as BaseRequestBuilder;
 
 /**
- * Build a ping request
+ * Build a Stats.jsp request.
  */
 class RequestBuilder extends BaseRequestBuilder
 {
     /**
-     * Overrides \Solarium\Core\Query\RequestBuilder::build().
+     * Build request for a stats.jsp query.
+     *
+     * @param QueryInterface $query
+     * @return Request
      */
     public function build(QueryInterface $query)
     {
-        $request = parent::build($query);
-
-        $request
-          ->addParam('numTerms', 0)
-          ->addParam('json.nl', 'map');
-
-        //$request->setMethod(Request::METHOD_GET);
+        $request = new Request;
+        $request->setHandler($query->getHandler());
         return $request;
     }
-
 }
